@@ -2,16 +2,19 @@ import React from 'react';
 import {View, TextInput, StyleSheet} from 'react-native';
 
 type inputBoxProps = {
-  handleLength: (newTxt:string) => void;
-}
+  lengthTxt: string,
+  handleLength: (newTxt: string) => void;
+};
 
-function InputBox(props : inputBoxProps): React.JSX.Element {
+function InputBox(props: inputBoxProps): React.JSX.Element {
   const handleLength = props.handleLength;
+  const lengthTxt = props.lengthTxt;
 
   return (
     <View style={style.container}>
       <View style={style.inputView}>
         <TextInput
+        value={lengthTxt}
           style={style.inputTxt}
           placeholder="Password Length 8-16"
           maxLength={2}

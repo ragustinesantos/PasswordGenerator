@@ -25,4 +25,4 @@ export const generatePasswordString = (passReq : utils.PasswordRequirement) : st
     const generatedPassword = createPassword(characters, passReq.length);
 
     return generatedPassword;
-}
+};

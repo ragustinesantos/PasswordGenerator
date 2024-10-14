@@ -1114,6 +1114,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@react-native-clipboard/clipboard@^1.14.2":
+  version "1.14.2"
+  resolved "https://registry.npmjs.org/@react-native-clipboard/clipboard/-/clipboard-1.14.2.tgz"
+  integrity sha512-Mb58f3neB6sM9oOtKYVGLvN8KVByea67OA9ekJ0c9FwdH24INu8RJoA7/fq+PRk+7oxbeamAcEoQPRv0uwbbMw==
+
 "@react-native-community/cli-clean@14.1.0":
   version "14.1.0"
   dependencies:
@@ -4173,7 +4178,12 @@ react-native-bouncy-checkbox@^4.1.2:
   dependencies:
     "@freakycoder/react-native-bounceable" "^1.0.3"
 
-react-native@*, react-native@0.75.4:
+react-native-snackbar@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.npmjs.org/react-native-snackbar/-/react-native-snackbar-2.8.0.tgz"
+  integrity sha512-IU+vPnIYF9IMi76yb4ZVeYQHkm0k4SauAxNPGHgRfdHY1xoVCScrxCSYZDH/o9tBf4ECjK5UkDCQLa0B8YEQ9g==
+
+react-native@*, "react-native@>= 0.61.5", react-native@>=0.60, react-native@0.75.4:
   version "0.75.4"
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
@@ -4232,7 +4242,7 @@ react-test-renderer@18.3.1:
     react-shallow-renderer "^16.15.0"
     scheduler "^0.23.2"
 
-react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, react@^18.3.1, react@18.3.1:
+react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, react@^18.3.1, "react@>= 16.9.0", react@>=16, react@18.3.1:
   version "18.3.1"
   dependencies:
     loose-envify "^1.1.0"
