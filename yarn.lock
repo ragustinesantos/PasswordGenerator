@@ -4183,8 +4183,10 @@ react-native-snackbar@^2.8.0:
   resolved "https://registry.npmjs.org/react-native-snackbar/-/react-native-snackbar-2.8.0.tgz"
   integrity sha512-IU+vPnIYF9IMi76yb4ZVeYQHkm0k4SauAxNPGHgRfdHY1xoVCScrxCSYZDH/o9tBf4ECjK5UkDCQLa0B8YEQ9g==
 
-react-native@*, "react-native@>= 0.61.5", react-native@>=0.60, react-native@0.75.4:
+react-native@*, react-native@^0.75.4, "react-native@>= 0.61.5", react-native@>=0.60:
   version "0.75.4"
+  resolved "https://registry.npmjs.org/react-native/-/react-native-0.75.4.tgz"
+  integrity sha512-Jehg4AMNIAXu9cn0/1jbTCoNg3tc+t6EekwucCalN8YoRmxGd/PY6osQTI/5fSAM40JQ4O8uv8Qg09Ycpb5sxQ==
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
     "@react-native-community/cli" "14.1.0"

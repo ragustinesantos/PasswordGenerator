@@ -52,10 +52,6 @@ function Main(): React.JSX.Element {
   ]);
   const [password, setPassword] = useState('');
 
-  console.log(
-    `length: ${length}, upper: ${includeUpper}, lower: ${includeLower}, special: ${includeSpecial}, number: ${includeNumber}`,
-  );
-
   const handleLength = (newTxt: string) => {
     setLength(newTxt);
   };
@@ -77,6 +73,7 @@ function Main(): React.JSX.Element {
       default:
         break;
     }
+
     setCheckboxes(
       checkboxes.map(item => {
         return item.id === id ? {...item, isChecked: checked} : item;
@@ -118,8 +115,17 @@ function Main(): React.JSX.Element {
         includeSymbol: includeSpecial,
       };
       setPassword(generatePasswordString(passwordRequirements));
-    } else {
+    } else if (isNaN(lengthToNum) || lengthToNum < 8 || lengthToNum > 16) {
       snackbar.showErrorSnackbar('Invalid length value');
+      setPassword('');
+    } else if (
+      !includeUpper &&
+      !includeLower &&
+      !includeSpecial &&
+      !includeNumber
+    ) {
+      snackbar.showErrorSnackbar('Make a selection');
+      setPassword('');
     }
   };
 
